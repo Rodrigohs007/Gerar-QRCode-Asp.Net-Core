@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo</h1>
+    <div class="col-lg-12">
+        <form method="post">
+            <div class="row">
+                <div class="col-lg-8">
+                     <label>Caminho da URL para gera o QRCode</label>
+                     <input type="text" name="Caminho" id="Caminho" class="form-control" required />
+                </div>
+                <div class="col-lg-4">
+                    <br />
+                    <button type="submit" class="btn btn-success">Gerar QRCode</button>
+                </div>
+            </div>
+        </form>
+        <br /><br />
+        <div class="col-lg-12">
+             <img alt="" src="@ViewBag.Base64String" style="height:250px;width:250px;" />
+        </div>
+        
+
+    </div>
+   
+</div>
